@@ -10,16 +10,16 @@ def user_choice():
     return length,uppercase,lowercase,digits,special
 
 def character(uppercase,lowercase,digits,special):
-    character_pool = ''
+    character = ''
     if uppercase:
-        character_pool += string.ascii_uppercase
+        character += string.ascii_uppercase
     if lowercase:
-        character_pool += string.ascii_lowercase
+        character += string.ascii_lowercase
     if digits:
-        character_pool += string.digits
+        character += string.digits
     if special:
-        character_pool += string.punctuation
-    return character_pool
+        character += string.punctuation
+    return character
 
 def password(length,char):
     return ''.join(random.choice(char) for _ in range(length))
