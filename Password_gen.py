@@ -18,7 +18,7 @@ def character(uppercase,lowercase,digits,special):
     if digits:
         character += string.digits
     if special:
-        character += string.punctuation
+        character+= string.punctuation
     return character
 
 def password(length,char):
